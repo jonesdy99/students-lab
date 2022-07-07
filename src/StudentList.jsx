@@ -1,12 +1,13 @@
-const StudentList = (props) => {
-  return (
+import Student from "./Student"
+
+function StudentList({students}) {
+  return ( 
     <>
-      <h1>Student List</h1>
-      {props.students.map(student =>
-          <h2>{student.name}: {student.bio}</h2>
-        )}
+      {students.map(student =>
+        <Student student={student}/>
+      )}
     </>
   )
 }
 
-export default StudentList;
+export default StudentList
