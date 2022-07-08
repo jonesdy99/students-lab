@@ -7,8 +7,8 @@ function Student(props) {
 
   return (
     <>
-      <h3>{props.student.name}</h3>
-      <h3>{props.student.bio}</h3>
+      <h3 className="red">Name: {props.student.name}</h3>
+      <h3 className="red">Bio: {props.student.bio}</h3>
       <h4>{scoreList}</h4>
     </>
   )
